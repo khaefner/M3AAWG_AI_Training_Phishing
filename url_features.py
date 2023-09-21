@@ -316,11 +316,6 @@ def count_external_redirection(page, domain):
 #               Is the registered domain created with random characters (Sahingoz2019)
 #################################################################################################################################
 
-from word_with_nlp import nlp_class
-
-def random_domain(domain):
-        nlp_manager = nlp_class()
-        return nlp_manager.check_word_random(domain)
     
 #################################################################################################################################
 #               Consecutive Character Repeat (Sahingoz2019)
