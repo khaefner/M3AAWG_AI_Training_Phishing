@@ -9,7 +9,7 @@ Created on Thu May 14 13:23:31 2020
 from . import content_features as ctnfe
 from . import url_features as urlfe
 from . import external_features as trdfe
-import mlmodels as models
+#import mlmodels as models
 import pandas as pd 
 import urllib.parse
 import tldextract
