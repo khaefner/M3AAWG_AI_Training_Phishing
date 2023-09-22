@@ -6,9 +6,9 @@ Created on Thu May 14 13:23:31 2020
 @author: hannousse
 """
 
-import content_features as ctnfe
-import url_features as urlfe
-import external_features as trdfe
+from . import content_features as ctnfe
+from . import url_features as urlfe
+from . import external_features as trdfe
 import ml_models as models
 import pandas as pd 
 import urllib.parse
