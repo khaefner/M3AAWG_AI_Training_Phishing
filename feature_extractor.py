@@ -20,7 +20,7 @@ import os
 import re
 
 
-from pandas2arff import pandas2arff
+#from pandas2arff import pandas2arff
 from urllib.parse import urlparse
 from bs4 import BeautifulSoup
 
