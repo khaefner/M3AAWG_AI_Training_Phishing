@@ -458,10 +458,10 @@ def extract_features(url, status=None):
                  #ctnfe.external_favicon(Favicon),
                  #ctnfe.links_in_tags(Link),
                  #ctnfe.submitting_to_email(Form),
-                 3ctnfe.internal_media(Media),
+                 #ctnfe.internal_media(Media),
                  #ctnfe.external_media(Media),
                #  # additional content-based features
-                 3ctnfe.sfh(hostname,Form),
+                 #ctnfe.sfh(hostname,Form),
                  #ctnfe.iframe(IFrame),
                  #ctnfe.popup_window(Text),
                  #ctnfe.safe_anchor(Anchor),
@@ -473,7 +473,7 @@ def extract_features(url, status=None):
                  
                 # # # thirs-party-based features
                  #trdfe.whois_registered_domain(domain),
-                 3trdfe.domain_registration_length(domain),
+                 #trdfe.domain_registration_length(domain),
                  #trdfe.domain_age(domain),
                  #trdfe.web_traffic(url),
                  #trdfe.dns_record(domain),
