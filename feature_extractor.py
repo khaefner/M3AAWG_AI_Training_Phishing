@@ -469,7 +469,7 @@ def extract_features(url, status=None):
                  #ctnfe.right_clic(Text),
                  #ctnfe.empty_title(Title),
                  #ctnfe.domain_in_title(extracted_domain.domain, Title),
-                 3ctnfe.domain_with_copyright(extracted_domain.domain, Text),
+                 #ctnfe.domain_with_copyright(extracted_domain.domain, Text),
                  
                 # # # thirs-party-based features
                  #trdfe.whois_registered_domain(domain),
