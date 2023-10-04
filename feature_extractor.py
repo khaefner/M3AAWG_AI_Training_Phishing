@@ -341,7 +341,7 @@ def extract_data_from_URL(hostname, content, domain, Href, Link, Anchor, Media, 
 
 
 def extract_features(url, status=None):
-    return
+    
     def words_raw_extraction(domain, subdomain, path):
         w_domain = re.split("\-|\.|\/|\?|\=|\@|\&|\%|\:|\_", domain.lower())
         w_subdomain = re.split("\-|\.|\/|\?|\=|\@|\&|\%|\:|\_", subdomain.lower())   
@@ -443,7 +443,7 @@ def extract_features(url, status=None):
                urlfe.suspecious_tld(tld),
                urlfe.statistical_report(url, domain),
 
-               
+               """
                # # # content-based features
                  ctnfe.nb_hyperlinks(Href, Link, Media, Form, CSS, Favicon),
                  ctnfe.internal_hyperlinks(Href, Link, Media, Form, CSS, Favicon),
@@ -480,6 +480,7 @@ def extract_features(url, status=None):
                  trdfe.google_index(url),
                  trdfe.page_rank(key,domain),
                # status
+               """
                status]
         #print(row)
         return row
