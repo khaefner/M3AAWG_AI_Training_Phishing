@@ -417,7 +417,7 @@ def extract_features(url, status=None):
                urlfe.abnormal_subdomain(url),
                urlfe.count_subdomain(url),
                urlfe.prefix_suffix(url),
-               urlfe.random_domain(domain),
+               //urlfe.random_domain(domain),
                urlfe.shortening_service(url),
                
                
