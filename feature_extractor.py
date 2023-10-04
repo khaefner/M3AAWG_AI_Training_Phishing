@@ -340,7 +340,7 @@ def extract_data_from_URL(hostname, content, domain, Href, Link, Anchor, Media, 
 #################################################################################################################################
 
 
-def extract_features(url, status):
+def extract_features(url, status=None):
     
     def words_raw_extraction(domain, subdomain, path):
         w_domain = re.split("\-|\.|\/|\?|\=|\@|\&|\%|\:|\_", domain.lower())
