@@ -6,7 +6,7 @@ import re
 #               Number of hyperlinks present in a website (Kumar Jain'18)
 #################################################################################################################################
 
- def nb_hyperlinks(Href, Link, Media, Form, CSS, Favicon):
+def nb_hyperlinks(Href, Link, Media, Form, CSS, Favicon):
      return len(Href['internals']) + len(Href['externals']) +\
             len(Link['internals']) + len(Link['externals']) +\
             len(Media['internals']) + len(Media['externals']) +\
