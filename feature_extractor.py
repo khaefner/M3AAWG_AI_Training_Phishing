@@ -376,7 +376,7 @@ def extract_features(url, status=None):
         tld = extracted_domain.suffix
         parsed = urlparse(url)
         scheme = parsed.scheme
-        
+        print(f"Domain {domain}")
         Href, Link, Anchor, Media, Form, CSS, Favicon, IFrame, Title, Text = extract_data_from_URL(hostname, content, domain, Href, Link, Anchor, Media, Form, CSS, Favicon, IFrame, Title, Text)
 
         row = [url,
