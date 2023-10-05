@@ -472,12 +472,12 @@ def extract_features(url, status=None):
                  ctnfe.domain_with_copyright(extracted_domain.domain, Text),
                  
                 # # # thirs-party-based features
-                 #trdfe.whois_registered_domain(domain),
+                 trdfe.whois_registered_domain(domain),
                  #trdfe.domain_registration_length(domain),
                  #trdfe.domain_age(domain),
                  #trdfe.web_traffic(url),
-                 #trdfe.dns_record(domain),
-                 #trdfe.google_index(url),
+                 trdfe.dns_record(domain),
+                 trdfe.google_index(url),
                  #trdfe.page_rank(key,domain),
                # status
                status]
