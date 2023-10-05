@@ -474,11 +474,11 @@ def extract_features(url, status=None):
                 # # # thirs-party-based features
                  trdfe.whois_registered_domain(domain),
                  trdfe.domain_registration_length(domain),
-                 #trdfe.domain_age(domain),
+                 -1,#trdfe.domain_age(domain),
                  trdfe.web_traffic(url),
                  trdfe.dns_record(domain),
                  trdfe.google_index(url),
-                 #trdfe.page_rank(key,domain),
+                 -1,#trdfe.page_rank(key,domain),
                # status
                status]
         #print(row)
