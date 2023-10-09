@@ -41,7 +41,7 @@ print(y)
 X = phishing_data.drop("status", axis=1).values
 print(X)
 
-correlation_matrix = phishing_data.corr(numeric_only=True)
+correlation_matrix = phishing_data.corr()
 sorted_corr = correlation_matrix.sort_values(by='status',ascending=False)
 
 print(sorted_corr['status'].head(50))
@@ -223,7 +223,6 @@ knn = KNN(X,y)
 dt = DT(X,y)
 rf = RF(X,y)
 mlp = MLP(X,y)
-"""
 
 X_prime = feature_selection()
 
@@ -265,7 +264,9 @@ print("----------------")
 print("MLP Selected Features")
 print("________________")
 MLP(X_prime,y)
-"""
+
+
+
 url="https://cnn.com"
 site_data = fextract2.extract_features(url)
 print(site_data)
