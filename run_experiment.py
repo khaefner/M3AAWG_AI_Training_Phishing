@@ -280,6 +280,19 @@ print(reshaped_site_data_array)
 print(reshaped_site_data_array.shape)
 result = knn.predict(reshaped_site_data_array)
 print(f"KNN: {result}")
+print("Phishing" if result == 1 else "Not Phishing")
+result = dt.predict(reshaped_site_data_array)
+print(f"DT: {result}")
+print("Phishing" if result == 1 else "Not Phishing")
+result =rf.predict(reshaped_site_data_array)
+print(f"RF: {result}")
+print("Phishing" if result == 1 else "Not Phishing")
+result = mlp.predict(reshaped_site_data_array)
+print(f"MLP: {result}")
+print("Phishing" if result == 1 else "Not Phishing")
+
+"""
+print(f"KNN: {result}")
 result = dt.predict(reshaped_site_data_array)
 probabilities =  dt.predict_proba(reshaped_site_data_array)
 positive_class_probability = probabilities[0, 1]
@@ -290,7 +303,7 @@ positive_class_probability = probabilities[0, 1]
 print(f"RF: {result}, {positive_class_probability}")
 result = mlp.predict(reshaped_site_data_array)
 print(f"MLP: {result}")
-
+"""
 
 
 
